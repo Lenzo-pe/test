@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 21:09:13 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/26 15:25:12 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/26 15:42:22 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ typedef struct		s_list
 }					t_list;
 
 t_list				*ft_lstnew(void *content);
-// void				ft_lstadd_front(t_list **lst, t_list *new);
+void				ft_lstadd_front(t_list **lst, t_list *new);
 // int					ft_lstsize(t_list *lst);
 // t_list				*ft_lstlast(t_list *lst);
 // void				ft_lstadd_back(t_list **lst, t_list *new);
