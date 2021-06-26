@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include <limits.h>
 #include "libft.h"
+#include <stdio.h>
 
 int	overflow(int64_t n)
 {
@@ -11,10 +12,9 @@ int	overflow(int64_t n)
 
 int		main(void)
 {
+	t_list	*lst;
 
-	if (overflow(-2147483649))
-		ft_putendl_fd("deu merda", 1);
-	else
-		ft_putendl_fd("deu boum", 1);
+	lst = ft_lstnew("pera");
+	printf("%s", lst->content);
 	return (0);
 }

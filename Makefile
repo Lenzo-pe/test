@@ -6,7 +6,7 @@
 #    By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/07 19:47:41 by lenzo-pe          #+#    #+#              #
-#    Updated: 2021/06/26 07:05:00 by lenzo-pe         ###   ########.fr        #
+#    Updated: 2021/06/26 15:41:39 by lenzo-pe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ SRC = ft_bzero.c ft_memccpy.c ft_memchr.c ft_memcmp.c \
 		ft_putnbr_fd.c \
 		ft_split.c ft_strmapi.c
 
-BONUS = ft_lstnew.c
+BONUS = ft_lstnew.c ft_lstadd_front.c
 
 OBS = $(SRC:.c=.o)
 
