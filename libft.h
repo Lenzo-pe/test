@@ -6,7 +6,7 @@
 /*   By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 21:09:13 by lenzo-pe          #+#    #+#             */
-/*   Updated: 2021/06/27 15:43:52 by lenzo-pe         ###   ########.fr       */
+/*   Updated: 2021/06/27 16:56:18 by lenzo-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,6 @@ void				ft_lstiter(t_list *lst, void (*f)(void *));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void(*del)(void *));
-// t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
-					// void(*del)(void *));
+t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
+					void(*del)(void *));
 #endif
