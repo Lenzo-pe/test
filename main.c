@@ -3,18 +3,42 @@
 #include "libft.h"
 #include <stdio.h>
 
-int	overflow(int64_t n)
+void	printste(t_list *lst)
 {
-	if (n > INT_MAX || n < INT_MIN)
-		return (1);
-	return (0);
+	ft_putendl_fd(lst->content, 1);
+	lst = lst->next;
+	if (lst != NULL)
+		ft_putendl_fd(lst->content, 1);
+}
+
+void	randomlistshit(t_list **lst)
+{
+	size_t	i;
+	t_list	*ptr;
+
+	i = 5;
+	*lst = ft_lstnew(ft_strdup("mega"));
+	ptr = *lst;
+	while (i--)
+	{
+		ptr->next = ft_lstnew("zord");
+		ptr = ptr->next;
+	}
+
 }
 
 int		main(void)
 {
 	t_list	*lst;
+	t_list	*lista;
 
-	lst = ft_lstnew("pera");
-	printf("%s", lst->content);
+	lista = ft_lstnew(ft_strdup("peraira"));
+	// lst = ft_lstnew("pera");
+	randomlistshit(&lst);
+	
+	ft_lstadd_front(&lst, lista);
+	ft_putnbr_fd(ft_lstsize(lst), 1);
+	ft_putchar_fd('\n', 1);
+	printste(lst);
 	return (0);
 }
