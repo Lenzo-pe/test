@@ -6,7 +6,7 @@
 #    By: lenzo-pe <lenzo-pe@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/07 19:47:41 by lenzo-pe          #+#    #+#              #
-#    Updated: 2021/06/27 06:56:16 by lenzo-pe         ###   ########.fr        #
+#    Updated: 2021/06/27 15:45:00 by lenzo-pe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,8 @@ SRC = ft_bzero.c ft_memccpy.c ft_memchr.c ft_memcmp.c \
 		ft_split.c ft_strmapi.c
 
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-		ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c
+		ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
+		ft_lstmap.c 
 
 OBS = $(SRC:.c=.o)
 
